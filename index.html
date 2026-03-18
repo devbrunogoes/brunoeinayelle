@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Uma homenagem romântica com memórias, mensagens especiais e contagem regressiva para 18 de abril."
+    >
+    <title>Nosso Amor em Cada Detalhe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="ambient ambient-left"></div>
+        <div class="ambient ambient-right"></div>
+        <div class="sparkles" aria-hidden="true"></div>
+
+        <header class="hero" id="top">
+            <nav class="topbar">
+                <span class="brand">Nossa História</span>
+                <section
+                    class="music-player"
+                    aria-label="Player da nossa música"
+                    data-youtube-id="3mHQ7a_fOy8"
+                    data-youtube-start="60"
+                    data-youtube-url="https://youtu.be/3mHQ7a_fOy8?si=NeWIF5P0GJOClzuD&t=60"
+                >
+                    <div class="music-player__cover" aria-hidden="true">
+                        <img
+                            src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=400&q=80"
+                            alt=""
+                        >
+                    </div>
+                    <div class="music-player__meta">
+                        <span class="music-player__eyebrow">Nossa trilha sonora</span>
+                        <strong class="music-player__title">Me Ama Mesmo</strong>
+                        <span class="music-player__artist">Matheus &amp; Kauan</span>
+                        <div class="music-player__progress">
+                            <span class="music-player__time" id="music-current-time">0:00</span>
+                            <div class="music-player__bar" aria-hidden="true">
+                                <span class="music-player__fill" id="music-progress-fill"></span>
+                            </div>
+                            <span class="music-player__time" id="music-total-time">0:00</span>
+                        </div>
+                        <div class="music-player__status" aria-hidden="true">
+                            <span class="status-dot"></span>
+                            <span class="status-dot"></span>
+                            <span class="status-dot"></span>
+                        </div>
+                    </div>
+                    <button
+                        class="music-toggle"
+                        type="button"
+                        aria-pressed="false"
+                        aria-label="Tocar ou pausar nossa música"
+                    >
+                        <span class="music-icon">▶</span>
+                        <span class="music-label">Tocar</span>
+                    </button>
+                </section>
+            </nav>
+
+            <section class="hero-content">
+                <div class="hero-copy">
+                    <p class="eyebrow">Uma surpresa feita com amor</p>
+                    <h1>Você transformou o meu mundo em um lugar mais bonito.</h1>
+                    <p class="hero-text">
+                        Cada instante ao seu lado vira memória, cada sorriso seu
+                        vira abrigo, e cada dia com você reforça a certeza de que
+                        amar também é encontrar paz.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#galeria" class="button button-primary">Ver nossas memórias</a>
+                        <a href="#mensagens" class="button button-secondary">Ler minhas palavras</a>
+                    </div>
+                </div>
+
+                <aside class="countdown-card" aria-labelledby="countdown-title">
+                    <p class="countdown-label">Contagem regressiva para o nosso 18/04</p>
+                    <h2 id="countdown-title">Faltam só alguns suspiros para esse dia especial.</h2>
+                    <div class="countdown" aria-live="polite">
+                        <div class="time-box">
+                            <strong id="days">00</strong>
+                            <span>dias</span>
+                        </div>
+                        <div class="time-box">
+                            <strong id="hours">00</strong>
+                            <span>horas</span>
+                        </div>
+                        <div class="time-box">
+                            <strong id="minutes">00</strong>
+                            <span>min</span>
+                        </div>
+                        <div class="time-box">
+                            <strong id="seconds">00</strong>
+                            <span>seg</span>
+                        </div>
+                    </div>
+                    <p id="countdown-caption" class="countdown-caption">
+                        Contando o tempo para mais um capítulo lindo da nossa história.
+                    </p>
+                </aside>
+            </section>
+        </header>
+
+        <main>
+            <section class="section section-gallery" id="galeria">
+                <div class="section-heading">
+                    <p class="eyebrow">Nossas memórias</p>
+                    <h2>Doze meses de amor, lembranças e momentos que moram em mim.</h2>
+                    <p>
+                        Cada card representa um mês da nossa história. Você pode
+                        trocar as imagens pelos registros favoritos de cada fase.
+                    </p>
+                </div>
+
+                <div class="gallery-grid">
+                    <article class="photo-card photo-card-month" data-month="1" tabindex="0" role="button" aria-label="Abrir detalhes do mês 1">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes1/IMG_20250418_172336.jpg"
+                                alt="Foto do primeiro mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">ABR - MAI</span>
+                            <span>O começo de tudo e o instante em que meu coração te escolheu.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="2" tabindex="0" role="button" aria-label="Abrir detalhes do mês 2">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes2/IMG_20250518_191918.jpg"
+                                alt="Foto do segundo mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">MAI - JUN</span>
+                            <span>Aprendi que caminhar ao seu lado deixa tudo mais bonito.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="3" tabindex="0" role="button" aria-label="Abrir detalhes do mês 3">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes3/IMG_20250619_184640.jpg"
+                                alt="Foto do terceiro mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">JUN - JUL</span>
+                            <span>Seu sorriso virou uma das minhas lembranças favoritas.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="4" tabindex="0" role="button" aria-label="Abrir detalhes do mês 4">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes4/IMG_20250725_193159.jpg"
+                                alt="Foto do quarto mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">JUL - AGO</span>
+                            <span>Cada detalhe com você começou a ter mais significado.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="5" tabindex="0" role="button" aria-label="Abrir detalhes do mês 5">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes5/IMG_20250824_163609.jpg"
+                                alt="Foto do quinto mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">AGO - SET</span>
+                            <span>Entre risos e abraços, fomos construindo nosso lugar.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="6" tabindex="0" role="button" aria-label="Abrir detalhes do mês 6">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes6/IMG_20250920_221835.jpg"
+                                alt="Foto do sexto mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">SET - OUT</span>
+                            <span>Seu carinho me mostrou como o amor pode ser leve e intenso.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="7" tabindex="0" role="button" aria-label="Abrir detalhes do mês 7">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes7/IMG_20251018_142827.jpg"
+                                alt="Foto do sétimo mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">OUT - NOV</span>
+                            <span>Com você, os dias simples passaram a ser inesquecíveis.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="8" tabindex="0" role="button" aria-label="Abrir detalhes do mês 8">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes8/IMG_20251127_223830.jpg"
+                                alt="Foto do oitavo mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">NOV - DEZ</span>
+                            <span>Nosso amor ficou ainda mais forte em cada nova memória.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="9" tabindex="0" role="button" aria-label="Abrir detalhes do mês 9">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes9/IMG_20251231_224800.jpg"
+                                alt="Foto do nono mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">DEZ - JAN</span>
+                            <span>Você continuou sendo a melhor parte de cada plano meu.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="10" tabindex="0" role="button" aria-label="Abrir detalhes do mês 10">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes10/IMG_20260118_145556.jpg"
+                                alt="Foto do décimo mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">JAN - FEV</span>
+                            <span>Até o tempo parece mais bonito quando é vivido com você.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month" data-month="11" tabindex="0" role="button" aria-label="Abrir detalhes do mês 11">
+                        <div class="photo-frame">
+                            <img
+                                src="assets/img/mes11/IMG_20260308_103152.jpg"
+                                alt="Foto do décimo primeiro mês do casal"
+                            >
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">FEV - MAR</span>
+                            <span>Quase um ciclo completo de uma história que eu quero para sempre.</span>
+                        </div>
+                    </article>
+
+                    <article class="photo-card photo-card-month photo-card-upcoming" data-month="12" tabindex="0" role="button" aria-label="Abrir detalhes do mês 12">
+                        <div class="photo-frame photo-frame-upcoming">
+                            <div class="upcoming-content">
+                                <span class="upcoming-tag">MAR - ABR</span>
+                                <h3>Em breve</h3>
+                                <p>Mais um capítulo lindo da nossa história está chegando.</p>
+                                <div class="mini-countdown" aria-label="Contagem regressiva para o mês 12">
+                                    <div class="mini-time-box">
+                                        <strong data-countdown="days">00</strong>
+                                        <span>dias</span>
+                                    </div>
+                                    <div class="mini-time-box">
+                                        <strong data-countdown="hours">00</strong>
+                                        <span>horas</span>
+                                    </div>
+                                    <div class="mini-time-box">
+                                        <strong data-countdown="minutes">00</strong>
+                                        <span>min</span>
+                                    </div>
+                                    <div class="mini-time-box">
+                                        <strong data-countdown="seconds">00</strong>
+                                        <span>seg</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-note">
+                            <span class="photo-month">Mês 12</span>
+                            <span>Esperando com o coração acelerado pelo nosso próximo 18/04.</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-messages" id="mensagens">
+                <div class="section-heading">
+                    <p class="eyebrow">Cartas para você</p>
+                    <h2>Palavras que talvez nunca consigam explicar tudo, mas chegam perto.</h2>
+                </div>
+
+                <div class="message-grid">
+                    <article class="message-card">
+                        <h3>Desde que você chegou</h3>
+                        <p>
+                            Minha vida ficou mais leve, mais sincera e mais cheia de
+                            cor. Você trouxe calma para os meus dias e intensidade
+                            para os meus sentimentos.
+                        </p>
+                    </article>
+
+                    <article class="message-card">
+                        <h3>Nos detalhes</h3>
+                        <p>
+                            Eu amo o jeito como você existe no mundo: no cuidado, na
+                            risada, no olhar, no carinho e até no silêncio que, com
+                            você, nunca parece vazio.
+                        </p>
+                    </article>
+
+                    <article class="message-card">
+                        <h3>Meu desejo</h3>
+                        <p>
+                            Quero continuar colecionando domingos tranquilos,
+                            conversas longas, planos bobos, sonhos grandes e todo o
+                            amor bonito que a gente ainda vai viver.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-highlights">
+                <div class="highlight-strip">
+                    <div class="highlight-pill">Seu amor me acalma.</div>
+                    <div class="highlight-pill">Seu abraço me encontra.</div>
+                    <div class="highlight-pill">Seu sorriso ilumina meus dias.</div>
+                    <div class="highlight-pill">Nós dois somos meu lugar favorito.</div>
+                </div>
+            </section>
+
+            <section class="section section-future" id="futuro">
+                <div class="section-heading">
+                    <p class="eyebrow">Nosso Futuro</p>
+                    <h2>Um espaço só para tudo o que fomos criando e imaginando com IA.</h2>
+                    <p>
+                        Sonhos, ideias, cenários e pequenas visões do amanhã que
+                        ganharam forma com criatividade, carinho e a nossa essência.
+                    </p>
+                </div>
+
+                <article class="future-card" data-month="future" tabindex="0" role="button" aria-label="Abrir galeria do nosso futuro">
+                    <div class="future-card__gallery">
+                        <div class="future-card__image">
+                            <img src="assets/img/futuros/IMG-20250329-WA0021.jpg" alt="Imagem criada com IA sobre o futuro do casal">
+                        </div>
+                        <div class="future-card__image">
+                            <img src="assets/img/futuros/IMG-20250925-WA0012.jpg" alt="Imagem criada com IA sobre o futuro do casal">
+                        </div>
+                        <div class="future-card__image">
+                            <img src="assets/img/futuros/IMG-20260106-WA0114.jpg" alt="Imagem criada com IA sobre o futuro do casal">
+                        </div>
+                    </div>
+
+                    <div class="future-card__content">
+                        <p class="eyebrow">Criado com amor e imaginação</p>
+                        <h3>Nosso amanhã também já começou a ganhar forma.</h3>
+                        <p>
+                            Aqui ficam guardadas as criações que nasceram das nossas
+                            ideias, da nossa curiosidade e desse jeitinho bonito de
+                            sonhar o futuro juntos.
+                        </p>
+                        <span class="button button-secondary">Abrir galeria do futuro</span>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section section-closing" id="final">
+                <div class="closing-card">
+                    <p class="eyebrow">Para terminar</p>
+                    <h2>
+                        Se eu pudesse escolher de novo, em cada vida, em cada acaso,
+                        ainda escolheria você.
+                    </h2>
+                    <p>
+                        Obrigado por cada memória, por cada cuidado e por cada
+                        instante que faz o amor parecer tão real, tão doce e tão
+                        nosso.
+                    </p>
+                    <a href="#top" class="button button-primary">Voltar ao começo</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section class="memory-modal" id="memory-modal" aria-hidden="true">
+        <div class="memory-modal__backdrop" data-close-modal></div>
+        <div class="memory-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="memory-modal-title">
+            <button class="memory-modal__close" type="button" data-close-modal aria-label="Fechar detalhes do mês">
+                Fechar
+            </button>
+
+            <div class="memory-modal__layout">
+                <div class="memory-modal__carousel">
+                    <button class="carousel-arrow" id="carousel-prev" type="button" aria-label="Foto anterior">
+                        ‹
+                    </button>
+
+                    <div class="carousel-stage">
+                        <img id="carousel-image" src="" alt="">
+                        <div class="carousel-caption" id="carousel-caption"></div>
+                    </div>
+
+                    <button class="carousel-arrow" id="carousel-next" type="button" aria-label="Próxima foto">
+                        ›
+                    </button>
+                </div>
+
+                <div class="memory-modal__content">
+                    <p class="eyebrow" id="memory-modal-month">Mês 1</p>
+                    <h2 id="memory-modal-title">Nossa memória desse mês</h2>
+                    <p id="memory-modal-text"></p>
+                    <div class="carousel-dots" id="carousel-dots" aria-label="Selecionar foto do carrossel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="youtube-player-container" aria-hidden="true"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
